@@ -1,0 +1,44 @@
+git <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>User Registration Form</h2>
+
+        <form id="myForm" onsubmit="return validateForm()">
+
+            <label>Full Name:</label>
+            <input type="text" id="name">
+            <span id="nameError" class="error"></span>
+
+            <label>Email:</label>
+            <input type="text" id="email">
+            <span id="emailError" class="error"></span>
+
+            <label>Phone Number:</label>
+            <input type="text" id="phone">
+            <span id="phoneError" class="error"></span>
+
+            <label>Password:</label>
+            <input type="password" id="password">
+            <span id="passwordError" class="error"></span>
+
+            <label>Confirm Password:</label>
+            <input type="password" id="confirmPassword">
+            <span id="confirmPasswordError" class="error"></span>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
